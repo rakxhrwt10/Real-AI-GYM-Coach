@@ -1,0 +1,11 @@
+{
+  "name": "apna-gym-coach-landing",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB,COACH -c green,cyan,yellow \"npm run dev --prefix server\" \"npm run dev --prefix client\" \"cd .. && python -m streamlit run static/main.py --server.port 8501\"",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

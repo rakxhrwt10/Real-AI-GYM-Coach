@@ -1,0 +1,28 @@
+:root {
+  --ink: #141712;
+  --paper: #f1f1e9;
+  --lime: #d7f56b;
+  --orange: #ef6848;
+  --muted: #656b60;
+  --sans: 'DM Sans', 'Trebuchet MS', sans-serif;
+  --display: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  --mono: 'DM Mono', 'Courier New', monospace;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+a { color: inherit; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: var(--display); }
+::selection { background: var(--lime); color: var(--ink); }
